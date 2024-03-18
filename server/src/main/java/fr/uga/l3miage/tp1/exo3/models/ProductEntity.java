@@ -3,10 +3,11 @@ package fr.uga.l3miage.tp1.exo3.models;
 import lombok.Cleanup;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Set;
-
+@Entity
 public class ProductEntity {
     @Id
     @Column(name="bar_code_number", length = 15)
